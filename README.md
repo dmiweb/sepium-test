@@ -11,5 +11,6 @@ npm run dev
 - HTML5
 - CSS3 (BEM)
 - JavaScript
-- Vite - сборщик проекта
+- Fancybox
 - Swiper.js - библиотека для слайдера
+- Vite - сборщик проекта
