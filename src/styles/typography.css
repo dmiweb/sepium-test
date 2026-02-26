@@ -1,0 +1,23 @@
+.header1-semibold {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.body1-medium {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height:  1.5
+}
+
+.body1-bold {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.body2-semibold {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+}

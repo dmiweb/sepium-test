@@ -1,0 +1,36 @@
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 1036px;
+  margin: 0 auto;
+  padding: 100px 0 50px;
+}
+
+.product-list__item {
+  width: 100%;
+  min-width: 320px;
+  max-width: 508px;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 1080px) {
+  .product-list {
+    margin: auto 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}

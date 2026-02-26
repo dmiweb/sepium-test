@@ -1,0 +1,13 @@
+:root {
+  --color-grayscale-0: rgba(255, 255, 255, 1);
+  --color-grayscale-100: rgba(246, 246, 246, 1);
+  --color-grayscale-200: rgba(230, 230, 230, 1);
+  --color-grayscale-300: rgba(161, 165, 173, 1);
+  --color-grayscale-400: rgba(101, 101, 101, 1);
+  --color-grayscale-500: rgba(70, 70, 70, 1);
+  --color-grayscale-600: rgba(50, 49, 47, 1);
+  --color-orange-200: rgba(255, 92, 0, 1);
+
+  --transition: 0.3s ease;
+  --radius: 0.5rem;
+}

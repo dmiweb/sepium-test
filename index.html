@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="/src/styles/base.css">
+  <link rel="stylesheet" href="/src/styles/layout.css">
+  <link rel="stylesheet" href="/src/styles/variables.css">
+  <link rel="stylesheet" href="/src/styles/typography.css">
+  <link rel="stylesheet" href="/src/styles/card.css">
+  <title>sepium-test</title>
+</head>
+
+<body>
+  <div id="app">
+    <ul class="product-list">
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product-list__item">
+        <article class="product-card">
+          <div class="product-card__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/assets/images/img6.png" alt="">
+              </div>
+            </div>
+
+            <div class="product-card__btn-prev swiper-button-prev product-card__interactive"></div>
+            <div class="product-card__btn-next swiper-button-next product-card__interactive"></div>
+
+            <a href="./src/assets/images/img1.png" data-fancybox="gallery-1"
+              class="product-card__zoom-btn product-card__interactive">
+              <svg class="product-card__zoom-icon">
+                <use href="/src/assets/sprite.svg#zoom"></use>
+              </svg>
+            </a>
+
+            <div class="product-card__description body1-medium">Описание товара</div>
+          </div>
+
+          <div class="product-card__body">
+            <div class="product-card__pagination swiper-pagination product-card__interactive"></div>
+
+            <div class="product-card__header">
+              <div class="product-card__article body1-medium">
+                Артикул — 4607
+              </div>
+
+              <h3 class="product-card__title header1-semibold">
+                Угловая бежевая кухня на&nbsp;заказ<br> с&nbsp;матовыми фасадами в&nbsp;современном стиле
+              </h3>
+            </div>
+
+            <div class="product-card__materials">
+              <span class="product-card__materials-title body1-medium">Варианты материалов</span>
+              <div class="product-card__modifications product-card__interactive">
+                <button
+                  class="product-card__modification product-card__modification--active product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  ПВХ
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Эмаль
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Пластик
+                </button>
+                <button class="product-card__modification product-card__interactive body1-medium">
+                  <div class="product-card__modification-icon-wrap">
+                    <svg class="product-card__modification-icon">
+                      <use href="/src/assets/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  Массив
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card__purchase">
+              <div class="product-card__price-block">
+                <div class="product-card__price-label body1-medium">Цена от</div>
+                <div class="product-card__price header1-semibold">515&nbsp;700 ₽</div>
+                <div class="product-card__meter-price body1-medium">
+                  Погонный метр от —
+                  <span class="product-card__meter-price-sum body1-bold">30&nbsp;000 ₽</span>
+                </div>
+              </div>
+              <button class="product-card__buy-btn product-card__interactive body2-semibold">
+                Заказать
+              </button>
+            </div>
+
+            <div class="product-card__footer">
+              <div class="product-card__actions">
+                <button class="product-card__likes-btn product-card__interactive">
+                  <div class="product-card__likes-icon-wrap">
+                    <svg class="product-card__likes-icon">
+                      <use href="/src/assets/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                  <span class="product-card__likes-count body1-bold">57</span>
+                </button>
+
+                <div class="product-card__calc-wrap product-card__interactive">
+                  <a href="/calc" target="_blank" class="product-card__calc-link  body1-medium">
+                    Рассчитать стоимость
+                  </a>
+                  <svg class="product-card__calc-link-icon">
+                    <use href="/src/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
