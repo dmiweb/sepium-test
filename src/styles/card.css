@@ -332,7 +332,6 @@
   }
 }
 
-
 @media (hover: hover) and (pointer: fine) {
   .product-card:hover .product-card__buy {
     display: block;
@@ -340,6 +339,7 @@
 }
 
 @media (max-width: 768px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
@@ -349,7 +349,22 @@
     display: none;
   }
 
+  .product-card__body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product-card__modifications {
+    gap: 0;
+  }
+
+  .product-card__purchase {
+    gap: 10px;
+  }
+
   .product-card__buy-btn {
+    max-width: 200px;
+    height: 46px;
     opacity: 1;
     visibility: visible;
   }
