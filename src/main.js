@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
 
       Fancybox.show([
-        { src: './src/assets/images/img1.png' },
-        { src: './src/assets/images/img2.png' },
-        { src: './src/assets/images/img3.png' },
-        { src: './src/assets/images/img4.png' },
-        { src: './src/assets/images/img5.png' },
-        { src: './src/assets/images/img6.png' },
+        { src: './src/assets/images/img1.webp' },
+        { src: './src/assets/images/img2.webp' },
+        { src: './src/assets/images/img3.webp' },
+        { src: './src/assets/images/img4.webp' },
+        { src: './src/assets/images/img5.webp' },
+        { src: './src/assets/images/img6.webp' },
       ])
     })
   })
